@@ -14,7 +14,7 @@ useEffect(function(){
 },[]);
 
 function traerMensajes(){
-    axios.get("http://192.168.1.39:5000/recibir")
+    axios.get("https://taller-1iaj.onrender.com/recibir")
     .then(function(res){
         if(res.data.status){
             setMensajeLocal(res.data.datos.mensaje);
